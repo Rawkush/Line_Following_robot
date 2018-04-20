@@ -20,6 +20,45 @@ void setup() {
   pinMode(lMotRev,OUTPUT);  
   pinMode(rMotRev,OUTPUT); 
 
+ 
+
+}
+
+void moveForward()
+{
+  digitalWrite(lMotFwd,HIGH);
+  digitalWrite(rMotFwd,HIGH);
+}
+
+void turnLeft()
+{
+  digitalWrite(lMotFwd,LOW);
+  digitalWrite(rMotFwd,HIGH);
+}
+
+
+void turnRight()
+{
+  digitalWrite(lMotFwd,HIGH);
+  digitalWrite(rMotFwd,LOW);
+}
+
+void turnCircle()
+{
+  digitalWrite(lMotFwd,LOW);
+  digitalWrite(rMotFwd,LOW);
+  digitalWrite(lMotRev,HIGH);
+  digitalWrite(rMotFwd,HIGH);
+}
+
+void Stop()
+{
+
+digitalWrite(lMotFwd,LOW);
+digitalWrite(rMotFwd,LOW);
+digitalWrite(lMotRev,LOW);
+digitalWrite(rMotRev,LOW);
+  
 }
 
 void loop() {

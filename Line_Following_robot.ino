@@ -8,6 +8,8 @@ int onWhite= 700; // reading for white line is greater than this
 
 void setup() {
 
+  Serial.begin(9600);
+  
   // pinMode(A0,INPUT); 
   pinMode(A1,INPUT);  //extreme left sensor
   pinMode(A2,INPUT);
@@ -70,6 +72,7 @@ int sensor3=analogRead(A3);//sensor3
 int sensor4=analogRead(A4);//sensor4
 int sensor5=analogRead(A5);//sensor5
 
+Serial.println(sensor1);
  
 if((sensor5<onblack)&&(sensor2<onblack||sensor3<onblack||sensor4<onblack))
 {

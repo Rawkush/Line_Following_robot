@@ -64,4 +64,9 @@ digitalWrite(rMotRev,LOW);
 void loop() {
   // put your main code here, to run repeatedly:
 
+int sensor1=analogRead(A1);//sensor1
+int sensor2=analogRead(A2);//sensor2
+int sensor3=analogRead(A3);//sensor3
+int sensor4=analogRead(A4);//sensor4
+int sensor5=analogRead(A5);//sensor5
 }

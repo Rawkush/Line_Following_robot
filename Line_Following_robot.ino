@@ -7,7 +7,18 @@ int onblack= 100;  // reading for black line from sensor is less than this
 int onWhite= 700; // reading for white line is greater than this
 
 void setup() {
-  // put your setup code here, to run once:
+
+   pinMode(A0,INPUT);
+  pinMode(A1,INPUT);
+  pinMode(A2,INPUT);
+  pinMode(A3,INPUT);
+  pinMode(A4,INPUT);
+  pinMode(A5,INPUT);
+    
+  pinMode(lMotFwd,OUTPUT); 
+  pinMode(rMotFwd,OUTPUT);
+  pinMode(lMotRev,OUTPUT);  
+  pinMode(rMotRev,OUTPUT); 
 
 }
 

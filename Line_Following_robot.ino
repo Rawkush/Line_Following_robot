@@ -8,12 +8,12 @@ int onWhite= 700; // reading for white line is greater than this
 
 void setup() {
 
-   pinMode(A0,INPUT);
-  pinMode(A1,INPUT);
+  // pinMode(A0,INPUT); 
+  pinMode(A1,INPUT);  //extreme left sensor
   pinMode(A2,INPUT);
-  pinMode(A3,INPUT);
+  pinMode(A3,INPUT);  // middle sensor
   pinMode(A4,INPUT);
-  pinMode(A5,INPUT);
+  pinMode(A5,INPUT);  // extreme right sensor
     
   pinMode(lMotFwd,OUTPUT); 
   pinMode(rMotFwd,OUTPUT);

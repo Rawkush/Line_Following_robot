@@ -69,4 +69,35 @@ int sensor2=analogRead(A2);//sensor2
 int sensor3=analogRead(A3);//sensor3
 int sensor4=analogRead(A4);//sensor4
 int sensor5=analogRead(A5);//sensor5
+
+ 
+if((sensor5<onblack)&&(sensor2<onblack||sensor3<onblack||sensor4<onblack))
+{
+
+  turnLeft();
+}else
+if((sensor1>onWhite && sensor5>onWhite)&&(sensor2<onblack||sensor3<onblack||sensor4<onblack))
+{moveForward();
+}else
+if((sensor5<onblack))
+  {
+    turnLeft();
+   
+  }else
+if(sensor1<onblack)
+  {
+    turnRight();
+  }
+else
+if( sensor1>onWhite && sensor5>onWhite && sensor2<onWhite && sensor2<onWhite && sensor4<onWhite)
+{
+ moveForward();
+ delay(15);
+
+ turnCircle();  
+ delay(40);
+
+
+}
+
 }

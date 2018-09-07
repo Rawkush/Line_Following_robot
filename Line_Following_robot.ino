@@ -94,13 +94,7 @@ if(sensor1<onblack)
 else
 if( sensor1>onWhite && sensor5>onWhite && sensor2<onWhite && sensor2<onWhite && sensor4<onWhite)
 {
- moveForward();
- delay(15);
-
- turnCircle();  
- delay(40);
-
-
+  turnCircle();  
 }
 
 }

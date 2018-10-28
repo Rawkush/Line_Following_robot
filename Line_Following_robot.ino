@@ -1,8 +1,7 @@
-const int lMotFwd=12; 
-const int rMotFwd=6;
-const int lMotRev=13;
-const int rMotRev=7; 
-
+const int lMotFwd=9; 
+const int rMotFwd=10;
+const int lMotRev=11;
+const int rMotRev=12; 
 const int onblack= 100;  // reading for black line from sensor is less than this
 const int onWhite= 700; // reading for white line is greater than this
 

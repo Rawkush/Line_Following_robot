@@ -2,7 +2,7 @@ const int lMotFwd=9;
 const int rMotFwd=10;
 const int lMotRev=11;
 const int rMotRev=12; 
-const int onblack= 100;  // reading for black line from sensor is less than this
+const int onblack= 300;  // reading for black line from sensor is less than this
 const int onWhite= 700; // reading for white line is greater than this
 
 void setup() {
@@ -28,7 +28,7 @@ void setup() {
 
 bool isOnBlack(int sensor){
 
-if( sensor>=onblack)
+if( sensor<=onblack)
 return true;
 else
 return false;
@@ -36,7 +36,7 @@ return false;
 
 
 bool isOnWhite(int sensor){
-  if(sensor<=onWhite)
+  if(sensor>=onWhite)
   return true;
   else
   return false;
@@ -49,12 +49,20 @@ void moveForward()
 {
   digitalWrite(lMotFwd,HIGH);
   digitalWrite(rMotFwd,HIGH);
+
+  digitalWrite(rMotRev,LOW);
+  digitalWrite(lMotRev,LOW);
+  
 }
 
 void turnLeft()
 {
   digitalWrite(lMotFwd,LOW);
   digitalWrite(rMotFwd,HIGH);
+
+  
+  digitalWrite(rMotRev,LOW);
+  digitalWrite(lMotRev,LOW);
 }
 
 
@@ -62,12 +70,15 @@ void turnRight()
 {
   digitalWrite(lMotFwd,HIGH);
   digitalWrite(rMotFwd,LOW);
+  
+  digitalWrite(rMotRev,LOW);
+  digitalWrite(lMotRev,LOW);
 }
 
 void turnCircle()
 {
   digitalWrite(lMotFwd,LOW);
-  digitalWrite(rMotFwd,LOW);
+  digitalWrite(rMotRev,LOW);
   digitalWrite(lMotRev,HIGH);
   digitalWrite(rMotFwd,HIGH);
 }
@@ -120,7 +131,7 @@ if( isOnBlack(sensor1)){
     turnRight();
   }else
   if( isOnWhite(sensor1) && isOnWhite(sensor2) && isOnWhite(sensor3) && isOnWhite(sensor4) && isOnWhite(sensor5) ){
-    turnCircle();   
+    turnCircle();   // replace with left if gap is present
   }
 
 

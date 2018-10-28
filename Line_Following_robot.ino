@@ -119,10 +119,13 @@ if( isOnBlack(sensor1)){
   }else
   if(isOnBlack(sensor4)){
     turnRight();
+  }else
+  if( isOnWhite(sensor1) && isOnWhite(sensor2) && isOnWhite(sensor3) && isOnWhite(sensor4) && isOnWhite(sensor5) ){
+    turnCircle();   
   }
 
 
-
 }
+
 
 }

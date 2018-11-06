@@ -36,4 +36,6 @@ Line follower is an autonomous robot which follows either black line in white ar
 ![9volt](https://user-images.githubusercontent.com/25636146/48066158-d368dc00-e1f2-11e8-8a5a-7ece0de08faf.png)
 </h1>
 
-# Circuit Diagram
+# How to use
+
+Burn the code into arduino and make connection according to the code or just make your connection and change the pin number in the code

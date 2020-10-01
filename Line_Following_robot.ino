@@ -1,7 +1,7 @@
-const int lMotFwd=9; 
-const int rMotFwd=10;
-const int lMotRev=11;
-const int rMotRev=12; 
+const int lMotFwd=9;  // connection on pin 9 left motor forward
+const int rMotFwd=10; //connection on pin 10 right motor forward
+const int lMotRev=11; //connection on pin 11 left motor reverse
+const int rMotRev=12;  //connection on pin 12 right motor reverse
 const int onblack= 300;  // reading for black line from sensor is less than this
 const int onWhite= 700; // reading for white line is greater than this
 

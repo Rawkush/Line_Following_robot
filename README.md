@@ -1,5 +1,7 @@
 # Line Following Robot
-
+![GitHub forks](https://img.shields.io/github/forks/rawkush/line_following_robot?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/rawkush/line_Following_robot?style=social) <br/>
+[![HitCount](http://hits.dwyl.com/rawkush/line_following_robot.svg)](http://hits.dwyl.com/rawkush/line_following_robot)<br/>
 
 Line follower is an autonomous robot which follows either black line in white are or white line in black area. Robot must be able to detect particular line and keep following it.
 
